@@ -1,0 +1,19 @@
+
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+int main()
+{
+    int a;
+    float b;
+    float e;
+    cout<< "ingrese su venta por favor: ";
+    cin>> a;
+    cout<< "El impuesto es de un: ";
+    cin>> b;
+    e = a*b;
+    cout<< "Se le cobrara: " << e << endl;
+    getch();
+    return 0;
+}
