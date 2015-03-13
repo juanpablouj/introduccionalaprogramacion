@@ -1,0 +1,13 @@
+Proceso valorabsoluto
+	
+	Escribir "ingrese el numero: ";
+	Leer A;
+	Si (A<0)
+		Entonces
+		A = -1*A;
+		
+	FinSi
+	
+	Escribir "su valor absoluto es: ", A;
+	
+FinProceso
