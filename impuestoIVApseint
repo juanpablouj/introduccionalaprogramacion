@@ -1,0 +1,12 @@
+Enter file contents here
+Proceso ImpuestoIVA
+	Escribir "Ingrese por favor su venta: ";
+	Leer A;
+	Escribir "su impuesto sera de: ";
+	Leer IVA;
+	C = A*IVA
+	
+	Escribir "su impuesto es: ", C;
+	
+	
+FinProceso
