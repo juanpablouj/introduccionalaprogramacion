@@ -1,0 +1,18 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main()
+{
+	int a;
+	cout<< "ingrese el numero del cual desea saber el valor absoluto: ";
+	cin>> a;
+	if (a<0)
+		(a = -1*a);
+	cout<< "El valor absoluto de su numero es: "<< a << endl;
+	getch();
+	return 0;
+}
+
