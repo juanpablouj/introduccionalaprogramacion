@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main()
+{
+	int c;
+	cout<< "ingrese el numero del cual desea saber su valor en signo: ";
+	cin>> c;
+	if (c<0)
+		cout<< "el numero es negativo: "<< c << endl;
+	else
+		if (c==0)
+		   cout<< "el numero es cero ";
+		else
+		   cout<< "el numero es positivo: "<< c << endl;
+	getch();
+	return 0;
+}
