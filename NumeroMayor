@@ -1,0 +1,31 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+
+using namespace std;
+
+int main()
+{
+	float a,b,i,n,d,c,h;
+	i = 0;
+	a = (-1)*99999;
+	h = 999999999999;
+	do{
+	cout<< "Ingrese por favor la cantidad de numeros que desea tener" << endl;
+	cin>> n;
+	for (i=i; i<n; i++)
+		{
+		cout<< "Ingrese los numeros"<< endl;
+		cin>> b;
+		 b>a;
+		if (b>a)
+			 a = b;
+		}
+		cout<< "El numero mayor es: "<< a <<endl;
+		cout<< "Si quiere volver a intentarlo presione 1 sino presione 0. SI.- 1/NO.- 0 "<< endl;
+		cin>> d;
+	} while (d==1);
+	getch();
+	return 0;
+}
