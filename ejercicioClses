@@ -1,0 +1,46 @@
+#include <cstdlib>
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main()
+{
+ float a,n,s,iva=0.13,e,m,i,f,afp=0.121,g,h;
+ g = 0.00000000009 * (-1);
+   m =0;
+   e = 1640*2;
+   cout<< "Ingrese el numero de empleados por favor"<< endl;
+     cin>> n;
+ for (i = i+1; i<=n; i++)
+ {   cout<< "introduzca el codigo de su empleado"<<endl;
+     cin>> a;
+    do {
+     cout<< "Ingrese el salario bruto de sus trabajadores"<<endl;
+     cin>> s;
+     } while (s==1640);
+     cout<< "NO PAGA LO LEGAL MALEANTE"<< endl;
+     if ( s>e)
+     { 
+          f = s - (s*iva) -  (s*afp);
+     cout <<"el sueldo neto es: "<< f << endl;
+}
+     else{
+     s = s;
+      cout <<"el sueldo neto es: "<< s<<endl;
+      }
+     if ( s>g )
+     
+      g = s;
+    
+     if (s<h)
+      h = s;
+      m = m + 1;
+      cout<< "Usted cuenta con: "<< m << " empleados"<<endl;
+}
+      cout<< "Su salario maximo es: "<< g<<endl;
+      cout<< "Su salario minimo es: "<< h << endl;
+      
+      getch ();
+    return 0;
+}
