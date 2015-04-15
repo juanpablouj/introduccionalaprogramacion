@@ -1,0 +1,48 @@
+#include <cstdlib>
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int main()
+{
+     int a;
+     float b,n,m,p,c,i;
+     double d;
+     i = 0;
+     c = 0.00000099 * (-1);
+     d =  100000;
+     cout<< "Ingrese por favor un numero entero: "<< endl;
+     cin>> a;
+     cout<< "Su numero entero es: "<< a << endl;
+  
+    do{
+         cout<< "BUEN DIA"<< endl;
+         cout<< "Ingrese cuantos numeros desea comparar: "<< endl;
+         cin>> n;
+                 for ( i = i+1; i<=n; i++)
+                 {
+                 
+         cout<< "Ingrese por favor el numero: "<< endl;
+         cin>> b;
+         
+         if (b>c)
+            c = b;
+            if (b<d)
+            d = b;
+            p =(c+d)/n;
+            
+            }
+            cout<<" Su numero mayor es: "<< c << endl;
+            cout<<" su numero menor es: "<< d << endl;
+            cout<< "El promedio de sus numero es: "<< p << endl;
+            cout << "Si quiere volver a usar el programa presione 1 sino presione 0 SI.- 1 / NO.- 0."<< endl;
+            cin>> m;
+            
+            } while (m==1);
+            
+         cout<< "Gracias por elegir nuestro programa"<< endl;
+         getch();
+         return 0;
+}
