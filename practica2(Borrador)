@@ -1,0 +1,43 @@
+#include <cstdlib>
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+int main()
+{
+    float a,b,l,m,n,p,k;
+    b=0;
+    k = 0.000001 * (-1);
+    l = 1000000;
+    do{
+                
+          cout<< "Ingrese cuantos numeros desea tener en su serie: "<< endl;
+          cin >> a;
+          for (b = b+1; b <=a; b++)
+          {
+          cout<< "Por favor digite los numeros: "<< endl;
+          cin>> m;
+          if (m>k)
+          k = m;
+          if (m<l){
+          l = m;
+          }
+         if(m<0){
+          cout<< "No se puede correr el programa"<< endl;
+          }
+           }
+               cout << "Su numero Mayor es: "<< k << endl;
+               cout << "Su numero Menor0 es: "<< l << endl;
+               cout<< "Se calculara el promedio"<< endl;
+               
+               p = m/a;
+               
+               cout<< "Su promedio es: "<< p << endl;
+               cout<< "SI QUIERE USAR DE NUEVO EL PROGRAMA PRESIONE 1 SINO 0 SI.- 1 / NO,- 0."<< endl;
+               cin>> n;
+              
+               }while (n==1);
+               cout<< "Gracias pro usar el programa"<<endl;
+    getch();
+    return 0;
+}
