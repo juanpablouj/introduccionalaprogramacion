@@ -1,0 +1,39 @@
+// En este ejemplo simularemos tener un catalogo para elegir la compra de un perro de alguna de las razas sugeridas
+#include <cstdlib>
+#include <iostream>
+#include "conio.h"
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+    int a,b;
+    do 
+    {
+    cout<< "Elija la Raza de perro que quiere comprar" << endl;
+    cout<< "1.- Pitbull Americano"<<endl;
+    cout<< "2.- American Stanfford"<<endl;
+    cout<< "3.- Spaniel Tibetano"<<endl;
+    cout<< "4.- Bichon Maltes"<<endl;
+    cout<< "5.- Beagle Harrier"<<endl;
+    cout<< "6.- Yorkshire Terrier"<<endl;
+    cin>> a;
+    
+    switch (a)
+    { case 1: cout<< "El costo de su perro es de 800$ (Pitbull Americano)"<<endl; break;
+      case 2: cout<< "El costo de su perro es de 900$ (American Stanfford)" <<endl; break;
+      case 3: cout<< "El costo de su perro es de 1000$ (Spaniel Tibetano)" <<endl; break;
+      case 4: cout<< "El costo de su perro es de 600$ (Bichon Maltes)" <<endl; break;
+      case 5: cout<< "El costo de su perro es de 700$ (Beagle Harrier)"<<endl; break;
+      case 6: cout<< "El costo de su perro es de 1200$ (Yorkshire Terrier)" <<endl; break;
+      default: cout<< "NO TENEMOS MAS RAZAS DE PERROS" << endl;
+      } 
+       cout<< "Por favor si quiere averiguar mas precios de las diferentes razas digite el 1 sino el 0 SI.- 1/ NO.- 0" << endl;
+      cin>>
+       b;
+      } while (b==1);
+      cout<< "GRACIAS POR COMPRAR EN TIENDAS PERRUNAS"<< endl;
+    getch();
+    return 0;
+}
