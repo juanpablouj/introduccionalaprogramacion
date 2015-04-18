@@ -1,0 +1,39 @@
+// nota final.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main ()
+{
+	float np,pp,sp,tp,ef,nf,a,z;
+	cout << "ingrese el ID del estudiante: "<<endl;
+	cin>> a;
+	while (a!=-999)
+		{
+		cout<<"Ingrese la nota practica"<< endl;
+		cin>> np;
+		cout<< "Ingrese la nota del primer parcial: "<<endl;
+		cin>> pp;
+		cout<< "Ingrese la nota del segundo parcial: "<<endl;
+		cin>> sp;
+		cout<< "Ingrese la nota del tercer parcial: "<<endl;
+		cin>> tp;
+		cout<< "Ingrese la nota del examen final: "<< endl;
+		cin>> ef;
+		cout<< "Se calculara la nota final"<< endl;
+
+		nf = np*0.2 + (pp+sp+tp/3)*0.4 + ef*0.4;
+
+		cout<< "Su nota final es: "<< nf << endl;
+		cout<< "Ingrese el ID del estudiante: "<< endl;
+		cin>> a;
+		}
+	cout<< "Gracias por usar el programa"<< endl;
+	getch ();
+return 0;
+}
+
