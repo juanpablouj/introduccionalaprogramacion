@@ -13,7 +13,7 @@ int main ()
 	cout << "ingrese la cantidad de alumnos que desea calcular la nota: "<<endl;
 	cin>> a;
 	for (z=0; z<a; z++)
-		{1
+		{
 		cout<<"Ingrese la nota practica"<< endl;
 		cin>> np;
 		cout<< "Ingrese la nota del primer parcial: "<<endl;
