@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int x,n,suma,signo,c,p;
+	suma = 0;
+	signo = 1;
+	cout<<"Ingrse el numero que desea que se sume"<<endl;
+	cin>>x;
+	cout<<"Ingrese por favor cuantas veces desea que se sume"<< endl;
+	cin>>n;
+	
+	for (c=1; c<=n; c++){
+		
+		p = powf(x,c);
+		suma = suma+signo*p;
+		signo = signo * (-1);
+		cout<< "SU SUMA ES: "<< suma<< endl;
+		}
+	getch ();
+	return 0;
+}
+
