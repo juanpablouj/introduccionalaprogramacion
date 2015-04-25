@@ -1,0 +1,24 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int a,b,c;
+		cout<<"Ingrese el primer numero"<< endl;
+		cin>> a;
+		cout<<"Ingrese el segundo numero"<< endl;
+		cin>> b;
+		
+		if (a>b){
+		c = a/b;
+		cout<< "Su numero es divisor y su cociente es: "<< c <<endl;
+		}
+		else {
+			cout<< "SU NUMERO NO ES DIVISOR"<< endl;
+		}
+	getch ();
+	return 0;
+}
