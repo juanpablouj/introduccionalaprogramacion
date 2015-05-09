@@ -1,0 +1,54 @@
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+using namespace std;
+
+float pot(float base, float exponente);
+float fact(int factorial);
+int serie (float suma);
+
+void main()
+{
+	
+	float ex,base;
+	float suma;
+	cout<< "ingrese el numero de base"<<endl;
+	cin>> base;
+	cout<< "ingrese N que sera su exponente y factorial"<< endl;
+	cin>> ex;
+	cout<< "la suma es: "<< suma << endl;
+	getch ();
+}
+
+float potencia(float base, float exponente)
+{
+	int z,x;
+	float ex;
+	for (z=1; z<=ex ; z++)
+
+		x = base*z;
+
+	return x;
+	}
+float fact(int factorial)
+{
+	float ex,facto;
+	int h;
+	for (h=1 ; h<=ex ; h++)
+		
+		facto = h*ex;
+	
+	return facto;
+	}
+int serie(float q, float r)
+{
+	float suma,c;
+	int x,facto;
+	c = 0;
+	suma = c + (x/facto);
+	return suma;
+}
+
+
