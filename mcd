@@ -1,0 +1,40 @@
+#include "stdafx.h"
+#include <iostream>
+#include "math.h"
+#include "conio.h"
+using namespace std;
+
+float mcd(float a, float b);
+
+void main ()
+{
+	float a,b,z;
+
+	cout<< "ingrese el primer numero"<< endl;
+	cin>> a;
+	cout<< "ingrese el segundo numero"<< endl;
+	cin>> b;
+	z = mcd(a,b);
+	cout<< "su mcd es "<< z << endl;
+	getch ();
+
+}
+
+float mcd(float a, float b)
+{
+	float z,x,c,i;
+	i=1;
+	z=1;
+	do{
+		if (a/i== 0 && b/i== 0)
+			{ z=z*1;
+	          x=a*1;
+			  c=b*1;
+		}
+		else 
+		{
+			i++;
+		}
+	} while (i<=a);
+	return i;
+}
