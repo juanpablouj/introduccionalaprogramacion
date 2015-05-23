@@ -2,39 +2,50 @@
 #include <iostream>
 #include "math.h"
 #include "conio.h"
+
 using namespace std;
 
-float mcd(float a, float b);
+int mcd(int a, int b);
 
 void main ()
 {
-	float a,b,z;
+int a,b,z,x,y;
+   cout<< "ingrese el primer numero"<< endl;
+   cin>> x;
+   cout<< "ingrese el segundo numero"<< endl;
+   cin>> y;
+   if (x>y)
+   {
+		b=x;
+		a=y;
+   }
+   else 
+   {
+	   a=x;
+	   b=y;
+   }
 
-	cout<< "ingrese el primer numero"<< endl;
-	cin>> a;
-	cout<< "ingrese el segundo numero"<< endl;
-	cin>> b;
-	z = mcd(a,b);
-	cout<< "su mcd es "<< z << endl;
-	getch ();
-
+   z = mcd(a,b);
+   cout<< "su mcd es "<< z << endl;
+   getch ();
 }
 
-float mcd(float a, float b)
+int mcd(int a, int b)
 {
-	float z,x,c,i;
-	i=1;
-	z=1;
-	do{
-		if (a/i== 0 && b/i== 0)
-			{ z=z*1;
-	          x=a*1;
-			  c=b*1;
-		}
-		else 
-		{
+	int z,x,c,i;
+   i=2;
+   z=1;// z es acumulador de producto
+   
+   do{
+      if ((a%i== 0) && (b%i== 0))
+          { z =z*i;
+			a =a/i;
+			b =b/i;
+		  }
+      else
+		  {
 			i++;
-		}
-	} while (i<=a);
-	return i;
+          }
+} while (i<=a);
+  return z;
 }
