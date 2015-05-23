@@ -1,0 +1,36 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void MAYOR(int n);
+int main()
+{
+int n;
+cout<<"Ingrese n: ";
+cin>>n;
+MAYOR(n);
+getch();
+return 0;
+}
+void MAYOR(int n)
+{
+int d,i=1,mayor=-9999,posicion;
+while(n>0)
+{
+d=n%10;
+if(d>mayor)
+{
+posicion=i;
+mayor=d;
+i++;
+}
+else
+{
+i++;
+}
+n=n/10;
+}
+cout<<"\nMayor valor= "<<mayor;
+cout<<"\nPosicion= "<<posicion;
+getch();
+}
