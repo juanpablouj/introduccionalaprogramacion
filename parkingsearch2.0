@@ -1,0 +1,309 @@
+ #include "stdafx.h" 
+ #include <iostream> 
+ #include "conio.h" 
+ #include "stdlib.h" 
+ 
+ 
+ using namespace std; 
+ void publico (); 
+ void privado ();
+ 
+ 
+ int main() 
+ { 
+ 	int opcion; 
+ 	system ("color 9F");
+	do{ 
+ 		cout <<endl; 
+		cout << "   ~~~~~~~~~~~~~~~~~ "<<endl;
+		cout << " ----------------------- "<<endl;
+ 		cout << "    PARKING SEARCH" << endl; 
+ 		cout << " ----------------------- " << endl;
+ 		cout << "   ~~~~~~~~~~~~~~~~~ "<<endl;
+		cout << "  1. Parqueos Publicos" << endl; 
+ 		cout << "  2. Parqueos Privados" << endl; 
+		cout << "  0. Salir" << endl; 
+ 		cout << endl; 
+ 		cout << "  ELIGE UNA OPCION: "; 
+ 		cin >> opcion; 
+ 		system ("cls"); 
+ 
+ 
+ 	switch(opcion){ 
+ 		case 1: publico();break; 
+		case 2: privado();break;
+ 		case 0: cout << "Salir"; break; 
+ 		default: cout << "Opcion invalida"; 
+ 		} 
+ 		}while (opcion!=0); 
+ 	getch(); 
+ } 
+ 
+ 
+ void publico () 
+ { 
+ int opcion, opcion1,opcion3, opcion4, opcion5;
+ system ("color 2F");
+ do{
+			cout << "	" << "PARQUEO PUBLICO";
+			cout << endl;
+			cout << " 10. Zona de la plaza principal" << endl;
+			cout << " 20. Zona 7 Calles" << endl;
+			cout << " 30. Zona del Parque El Arenal" << endl;
+			cout << "  0. Salir " << endl;
+			cout << " ELIGE OPCION: " << endl;
+			cin >> opcion1;
+			system ("cls");
+		switch(opcion1)
+		{
+			case 10: system ("color 3F");
+				     cout << "ZONA DE LA PLAZA PRINCIPAL";
+					 cout << endl;
+					 cout << " 11. Parqueo A" << endl;
+					 cout << " 12. Parqueo B" << endl;
+					 cout << " 13. Parqueo C" << endl;
+					 cout << " 14. Parqueo D" << endl;
+					 cout << " 15. Parqueo E" << endl;
+					 cout << " 16. Parqueo F" << endl;
+					 cout << " ELIGE UNA OPCION: ";
+					 cin >> opcion3;
+					 system ("cls");
+
+			switch(opcion3)
+			{
+					case 11: cout << "PARQUEO A: ZONA DE LA PLAZA PRINCIPAL" << endl;
+							 cout << endl;
+							 cout << " Horarios de atencion: " << endl;
+							 cout << " Lunes a Viernes: 8:00am-21:00pm "<< endl;
+							 cout << endl;
+							 cout << " Direccion: " << endl;
+							 cout << " Calle velasco entre Ingavi y Ayacucho. " << endl;
+							 cout << endl;
+							 cout << " Precio: " << endl;
+							 cout << " 15Bs. No se cobra por horas extras. " << endl; break;
+
+					case 12: cout << "PARQUEO B: ZONA DE LA PLAZA PRINCIPAL" << endl;
+							 cout << endl;
+							 cout << " Horarios de atencion: " << endl;
+							 cout << " Lunes a Sabado: 7:00am-22:00pm "<< endl;
+							 cout << endl;
+							 cout << " Direccion: " << endl;
+							 cout << " Calle Junin entre 21 de Mayo y España. " << endl;
+							 cout << endl;
+							 cout << " Precio: " << endl;
+							 cout << " 10Bs. por dos horas. Se cobra 5Bs. por hora extra. " << endl; break;
+					
+					case 13: cout << "	" << "PARQUEO C: ZONA DE LA PLAZA PRINCIPAL" << endl;
+							 cout << endl;
+							 cout << " Horarios de atencion: " << endl;
+							 cout << "	Lunes a Viernes: 7:30am-21:00pm "<< endl;
+							 cout << endl;
+							 cout << " Direccion: " << endl;
+							 cout << " Calle Ayacucho entre Velasco e independencia. " << endl;
+							 cout << endl;
+							 cout << " Precio: " << endl;
+							 cout << " 7Bs. por hora. " << endl; break;
+
+					case 14: cout << "PARQUEO D: ZONA DE LA PLAZA PRINCIPAL" << endl;
+							 cout << endl;
+							 cout << " Horarios de atencion: " << endl;
+							 cout << " Lunes a Viernes: 8:00am-23:00pm "<< endl;
+							 cout << endl;
+							 cout << " Direccion: " << endl;
+							 cout << " Calle Aroma esquina Bolivar. " << endl;
+							 cout << endl;
+							 cout << " Precio: " << endl;
+							 cout << " 10Bs. No se cobra por horas extras. " << endl; break;
+
+					case 15: cout << "PARQUEO E: ZONA DE LA PLAZA PRINCIPAL" << endl;
+							 cout << endl;
+							 cout << " Horarios de atencion: " << endl;
+							 cout << " Lunes a Sabado: 6:30am-23:00pm "<< endl;
+							 cout << endl;
+							 cout << " Direccion: " << endl;
+							 cout << " Calle Warnes entre Chuquisaca y La Paz. " << endl;
+							 cout << endl;
+							 cout << " Precio: " << endl;
+							 cout << " 15Bs. No se cobran horas extras.  " << endl; break;
+
+					case 16: cout << "PARQUEO F: ZONA DE LA PLAZA PRINCIPAL" << endl;
+							 cout << endl;
+							 cout << " Horarios de atencion: " << endl;
+							 cout << " Lunes a Viernes: 7:00am-00:00pm "<< endl;
+							 cout << endl;
+							 cout << " Direccion: " << endl;
+							 cout << " Calle arenales entre libertad y 24 de Septiembre. " << endl;
+							 cout << endl;
+							 cout << " Precio: " << endl;
+							 cout << " 10Bs. por hora. " << endl; break;
+					 default: cout << "Opcion no valida" << endl; break;
+							 } break;
+				system ("cls");
+
+				case 20: system ("color 4F");
+					    cout << "ZONA 7 CALLES";
+						cout << endl;
+						cout << " 21. Parqueo AA" << endl;
+						cout << " 22. Parqueo BB" << endl;
+						cout << " ELIGE UNA OPCION: ";
+						cin >> opcion4;
+						system ("cls");
+
+					switch(opcion4){
+					case 21: cout << "PARQUEO AA: ZONA 7 CALLES" << endl;
+							 cout << endl;
+							 cout << "Horarios de atencion: " << endl;
+							 cout << " Lunes a Viernes: 8:00am-20:00pm "<< endl;
+							 cout << endl;
+							 cout << "Direccion: " << endl;
+							 cout << "Calle Isabel la Catolica entre Valle Grande y Cordillera. " << endl;
+							 cout << endl;
+							 cout << "Precio: " << endl;
+							 cout << "10Bs. No se cobran horas extras.  " << endl; break;
+
+					case 22: cout << "PARQUEO BB: ZONA 7 CALLES" << endl;
+							 cout << endl;
+							 cout << "Horarios de atencion: " << endl;
+							 cout << " Lunes a Sabado: 7:00am-23:00pm "<< endl;
+							 cout << endl;
+							 cout << "Direccion: " << endl;
+							 cout << "Calle Cordillera entre Isabel la Catolica y Suarez de Figueroa. " << endl;
+							 cout << endl;
+							 cout << "Precio: " << endl;
+							 cout << "15Bs. No se cobran horas extras.  " << endl; break;
+
+					default: {
+						cout << "Opcion no valida" << endl;
+							 } break;
+				} break;
+				system ("cls");
+			
+				case 30: system ("color 5F");
+					cout << "ZONA DEL PARQUE EL ARENAL" << endl;
+					cout << endl;
+					cout << "31. Parqueo G" << endl;
+					cout << "32. Parqueo H" << endl;
+					cout << "33. Parqueo I" << endl;
+					cout << "ELIGE UNA OPCION: ";
+					cin >> opcion5;
+					system ("cls");
+
+				switch (opcion5){
+					case 31: cout << "PARQUEO G: ZONA DEL PARQUE EL ARENAL" << endl;
+							 cout << endl;
+							 cout << " Horarios de atencion: " << endl;
+							 cout << "	Lunes a Viernes: 7:00am-20:00pm "<< endl;
+							 cout << endl;
+							 cout << " Direccion: " << endl;
+							 cout << "	Calle Beni entre vacadiez y Seoane. " << endl;
+							 cout << endl;
+							 cout << " Precio: " << endl;
+							 cout << "	10Bs. No se cobran horas extras.  " << endl; break;
+
+					case 32: cout << "PARQUEO H: ZONA DEL PARQUE EL ARENAL" << endl;
+							 cout << endl;
+							 cout << "Horarios de atencion: " << endl;
+							 cout << " Lunes a Viernes: 8:00am-23:00pm "<< endl;
+							 cout << endl;
+							 cout << "Direccion: " << endl;
+							 cout << "Calle 24 de Septiembre entre Cuellar y Caballero. " << endl;
+							 cout << endl;
+							 cout << "Precio: " << endl;
+							 cout << "8Bs. No se cobran horas extras.  " << endl; break;
+
+					case 33: cout << "PARQUEO I: ZONA DEL PARQUE EL ARENAL" << endl;
+							 cout << endl;
+							 cout << "Horarios de atencion: " << endl;
+							 cout << " Lunes a Viernes: 7:30am-21:00pm "<< endl;
+							 cout << endl;
+							 cout << "Direccion: " << endl;
+							 cout << "Calle 24 de Septiembre entre Vacadiez y cuellar. " << endl;
+							 cout << endl;
+							 cout << "Precio: " << endl;
+							 cout << "10Bs. No se cobran horas extras.  " << endl; break;
+
+					default: {
+						cout << "opcion no valida" << endl;
+							 } break;
+				} break;
+				default: {
+				cout << "opcion no valida" << endl;
+					 }
+				} break;
+				system ("cls");
+
+			}while(opcion!=0);
+			system ("pause");
+			system ("cls");
+	}
+	void privado ()
+	{
+		int opcion6, opcion7, opcion8, opcion9;
+		system ("color 6F");
+		do
+		{
+		        cout << "PARQUEO PRIVADO" << endl;
+				cout << endl;
+				cout << "1. Zona de la Plaza Principal" << endl;
+				cout << "2. Zona 7 calles" << endl;
+				cout << "0. Salir" << endl;
+				cout << "ELIGE UNA OPCION: ";
+				cin >> opcion6;
+				system ("cls");
+
+				switch (opcion6)
+				{
+			       case 1: system ("color 3F");
+					       cout << "ZONA DE LA PLAZA PRINCIPAL" << endl;
+					       cout << "10. Parqueo Shopping Bolivar" << endl;
+					       cout << "20. parqueo Hotel La Pascana" << endl;
+						   cout << " 0. salir" << endl;
+					       cout << "ELIGE UNA OPCION: ";
+					       cin >> opcion7;
+						   switch (opcion7)
+						   {
+							   case 10: cout << "PARQUEO J: ZONA DE LA PLAZA PRINCIPAL" << endl;
+										cout << endl;
+										cout << "Horarios de atencion: " << endl;
+										cout << " Lunes a Viernes: 6:30am-23:00pm "<< endl;
+										cout << endl;
+										cout << "Direccion: " << endl;
+										cout << "Calle Bolivar entre 24 de Septiembre y Beni. " << endl;
+										cout << endl; break;
+
+								case 11: cout << "PARQUEO J: ZONA DE LA PLAZA PRINCIPAL" << endl;
+										cout << endl;
+										cout << "Horarios de atencion: " << endl;
+										cout << " Lunes a Domingo: 6:00am-00:00pm "<< endl;
+										cout << endl;
+										cout << "Direccion: " << endl;
+										cout << "Calle Bolivar entre 24 de Septiembre y Beni. " << endl;
+										cout << endl; break;
+
+								default: cout << "opcion no valida" << endl;break;
+						
+						   }
+
+				   case 2:  cout << "Zona 7 calles" << endl;
+							cout << "20. Parqueo J" << endl;
+							cout << "ELIGE UNA OPCION: ";
+							cin >> opcion8;
+
+							switch (opcion8)
+								{
+									case 20: cout << "	PARQUEO J: ZONA 7 CALLES" << endl;
+											 cout << endl;
+											 cout << " Horarios de atencion: " << endl;
+											 cout << " Lunes a Domingo: 6:00am-23:00pm "<< endl;
+											 cout << endl;
+											 cout << " Direccion: " << endl;
+											 cout << " Calle Isabel la Catolica entre Vallegrande y Cordillera. " << endl;
+											 cout << endl; break;
+
+									default: cout << "opcion no valida" << endl; break;
+							}
+				} break;
+		} while (opcion6!=0);
+	       system ("pause");
+			system ("cls");
+	}
