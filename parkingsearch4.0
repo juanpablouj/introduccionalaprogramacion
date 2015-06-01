@@ -311,7 +311,7 @@
 							 cout << endl<< endl;
 							 cout << "Lugares disponibles: "<< endl;
 							 cout << "Los espacios ";
-							 mostrar (a,tamanio); break;
+							 mostrar (a,tamanio);
 
 					case 32: cout << "_________________________________________________ " << endl;
 							 cout << endl<< endl;
