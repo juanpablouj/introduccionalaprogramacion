@@ -1,0 +1,107 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#define MAX 100
+
+using namespace std;
+
+void cargar  (int vec[], int n);
+void mostrar (int vec[], int n);
+void ordenar (int vec[], int n);
+int buscar (int vec[],int n, int o);
+
+void main()
+{ int m,l,n,z,o,c,vec[MAX];
+	
+	do {
+		cout<< "Ingrese el numero de elementos"<< endl;
+		cin>> l;
+	} while((n<0)||(n>100));
+
+	do{
+	cout<<"Ingrese el numero que desea: ";
+	cout<<"1.- Cargar un vector"<< endl;
+	cout<<"2.- mostrar un vector"<< endl;
+	cout<<"3.- ordenar un vector"<< endl;
+	cout<<"4.- buscar un vector"<< endl;
+	cout<<"0.- SALIR"<< endl;
+	cin>> m;
+	
+
+	switch (m)
+	{
+	case 1: cargar (vec,n); break;
+	case 2: mostrar (vec, n); break;
+	case 3: ordenar (vec,n); break;
+	case 4: z = buscar (vec,n,o);
+			if (z==0)
+				{cout<<"No se encuentra en el vector"<< endl;
+			}
+			else{
+				cout<< "Se encuentra en la posicion"<< o << endl;
+				}
+	case 0: cout<< "SALIR" << endl; break;
+	default: cout<< "opcion invalida"<< endl; break;
+	}
+	}while (m!=0);
+	getch();
+}
+
+	void cargar (int vec[], int n)
+	{ int i;
+		for(i=1; i<n; i++)
+		{ cout<< "Ingrese el valor del vec["<< i <<"]"<< endl;
+		  cin>> vec[i];
+		}
+	}
+	void mostrar (int vec[], int n)
+	{ int j;
+	    for(j=1; j<n; j++)
+		{
+			cout<<"Mostrar el valor del vec["<< j <<"]"<< endl;
+		    cout<< vec[j];
+		}
+	}
+	void ordenar (int vec[], int n)
+	{ int o,c,aux;
+	   for (o=1; o<n; o++)
+	     {
+		   for(c=1; c<n; c++)
+	  
+	   {
+		   if(vec[o]>vec[c])
+		   {
+			   aux = vec[o];
+			   vec[o] = vec[c];
+			   vec[c] = aux;
+		   }
+		   }
+	   }
+	}
+	int buscar (int vec[],int n, int o)
+	{
+		int imenor, imayor, mitad,c;
+	
+			imenor = 0;
+			imayor = n-1;
+			mitad = (imayor-imenor)/2;
+			while (imenor < imayor)
+			{
+				if(vec[mitad]== o)
+				{ return mitad;
+				}
+				else {
+					if(vec[mitad]> o)
+						{ imayor = mitad-1;
+					
+						}
+					else
+						{ imenor = mitad+1;
+						
+						}
+					}
+				}
+			
+			
+			return 0;
+			}
