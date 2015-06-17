@@ -15,7 +15,7 @@ void main()
 	
 	do {
 		cout<< "Ingrese el numero de elementos"<< endl;
-		cin>> l;
+		cin>> n;
 	} while((n<0)||(n>100));
 
 	do{
